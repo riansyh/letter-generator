@@ -1,0 +1,11 @@
+body {
+    background-color: #fefefe;
+}
+
+.bg-indigo {
+    background-color: var(--bs-indigo);
+}
+
+.text-justify {
+    text-align: justify;
+}

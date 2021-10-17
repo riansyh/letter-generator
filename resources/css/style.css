@@ -1,0 +1,7 @@
+.bg-indigo {
+    background-color: var(--bs-indigo);
+}
+
+body {
+    background-color: black !important;
+}
