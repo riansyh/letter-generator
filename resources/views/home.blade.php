@@ -9,24 +9,3 @@
     <a href="{{ route('manage')}}" class="d-block btn-primary btn mt-3 mx-3 p-3 w-50"> <i class="fas fa-tasks me-1"></i> Kelola Template Surat</a>
 </div>
 @endsection
-
-@section('script_footer')
-    <script type="text/javascript">
-        fetch('/api/letter', {
-            method: 'GET', 
-            headers: {
-               'Content-Type': 'application/json',
-               'Accept': 'application/json',
-               'url': '/api/letter',
-            },
-         })
-         .then((response) => response.json())
-         .then((data) => show(data))
-         .catch(error => console.log(error));
-
-         const show = (data) => {
-            document.querySelector('#tes').innerHTML = data;
-         }
-
-    </script>
-@endsection
